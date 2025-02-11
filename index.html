@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-blue-900 text-white p-4 hidden md:block transition-transform duration-300 transform md:translate-x-0 -translate-x-full">
+            <h2 class="text-2xl font-bold">Dashboard</h2>
+            <nav class="mt-4">
+                <ul>
+                    <li class="py-2 hover:bg-blue-700 rounded-md px-2 transition duration-300"><a href="#">Home</a></li>
+                    <li class="py-2 hover:bg-blue-700 rounded-md px-2 transition duration-300"><a href="#">Profile</a></li>
+                    <li class="py-2 hover:bg-blue-700 rounded-md px-2 transition duration-300"><a href="#">Settings</a></li>
+                    <li class="py-2 hover:bg-blue-700 rounded-md px-2 transition duration-300"><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <header class="flex justify-between items-center bg-white shadow p-4 rounded-md">
+                <h1 class="text-xl font-bold">Welcome to Dashboard</h1>
+                <button class="md:hidden bg-blue-500 text-white px-3 py-1 rounded transition-transform duration-300 transform hover:scale-105">Menu</button>
+            </header>
+            
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                <div class="bg-white p-4 shadow rounded-lg transform transition duration-300 hover:scale-105">
+                    <h2 class="text-lg font-semibold">Card 1</h2>
+                    <p class="text-gray-600">Some details about this card.</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded-lg transform transition duration-300 hover:scale-105">
+                    <h2 class="text-lg font-semibold">Card 2</h2>
+                    <p class="text-gray-600">Some details about this card.</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded-lg transform transition duration-300 hover:scale-105">
+                    <h2 class="text-lg font-semibold">Card 3</h2>
+                    <p class="text-gray-600">Some details about this card.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
